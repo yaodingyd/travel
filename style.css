@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+html {
+  font-family: 'Merriweather', serif;
+  font-size: 14px;
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+
+svg {
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+}
+#states * {
+  transition: fill 1s;
+}
+#states *.on {
+  fill: red;
+}
+
+h6 {
+  color: red;
+  font-size: 1.2rem;
+  padding-bottom: 5px;
+}
+
+.list-of-states li {
+  opacity: 0;
+  position: fixed;
+  transition: opacity 1s;
+}
+.list-of-states li.on {
+  font-weight: bold;
+  display: inline-block;
+  opacity: 1;
+  width: 200px;
+  bottom: 0;
+  padding-bottom: 100px;
+  right: 20px;
+}
